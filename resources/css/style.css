@@ -19,6 +19,7 @@ body {
   background-color: #fff;
   color: #555;
   font: 300 20px 'Lato', 'Arial', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -310,6 +311,7 @@ header {
 }
 
 .steps-box:last-child {
+  text-align: left;
   padding-left: 3%;
   margin-top: 70px;
 }
