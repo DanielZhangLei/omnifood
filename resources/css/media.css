@@ -12,6 +12,10 @@
 @media only screen and (max-width: 1023px) {
   body { font-size: 18px; }
   section { padding: 60px 0;}
+  
+  .logo {
+    height: 90px;
+  }
 
   .long-copy {
     width: 80%;
@@ -55,8 +59,44 @@
     width: 100%; 
     margin: 0 0 4% 0;
   }
+  
+  .logo {
+    height: 60px;
+  }
 
-  .main-nav  { display: none; } 
+  /* Mobile nav */
+  .main-nav  { 
+    display: none;
+    float: left; 
+  } 
+
+  .main-nav li { 
+    display: block; 
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  /* Sticky nav */
+  .sticky .main-nav li {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .sticky .main-nav li a{
+    padding-bottom: 5px;
+  }
+  
+  .sticky .mobile-icon {
+    margin-top: 10px;
+  }
+
+  .sticky .mobile-icon i {
+    color: #555;
+  }
 
   .long-copy {
     width: 100%;
@@ -85,6 +125,5 @@
 @media only screen and (max-width: 480px) {
   section { padding: 25px 0; }
   .contact-form { width: 100%; }
-
 }
 

@@ -106,7 +106,14 @@ section {
   padding: 1%;
 }
 
+.hidden {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
 
+.visible {
+  opacity: 1;
+}
 
 /* ----- HEADINGS ----- */
 h1,
@@ -213,7 +220,8 @@ h3 {
 /* HEADER */
 /* ----------------------------------------------- */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('images/hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -234,6 +242,14 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
@@ -247,12 +263,46 @@ header {
   font-size: 90%;
   border-bottom: 2px solid transparent;
   transition: border-bottom .2s;
-
 }
 
 .main-nav li a:hover {
   border-bottom: 2px solid #e67e22;
 }
+
+/* Mobile nav */
+.mobile-icon {
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
+/* Sticky nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .98);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a{
+  padding-bottom: 18px;
+  color: #555;
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black { display: block; }
 
 /* ----------------------------------------------- */
 /* FEATURES */
@@ -391,7 +441,8 @@ header {
 
 .section-testimonials {
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/back-customers.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, .7) 100%), url('images/back-customers.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .7) 0, rgba(0, 0, 0, .7) 100%), url('images/back-customers.jpg');
   background-size: cover;
   background-attachment: fixed;
 }

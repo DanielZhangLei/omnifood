@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="width=device-width, height=device-height, initial-scale=1.0 minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="vendors/css/normalize.css">
   <link rel="stylesheet" href="vendors/css/grid.css">
   <link rel="stylesheet" href="vendors/css/ionicons.min.css">
   <link rel="stylesheet" href="resources/css/style.css">
   <link rel="stylesheet" href="resources/css/media.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400">
+  <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/resources/favicons/manifest.json">
+  <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#555555">
+  <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
   <script src="https://use.fontawesome.com/d50db568ae.js"></script>
   <title>Omnifood</title>
 </head>
@@ -17,12 +25,14 @@
     <nav>
       <div class="row clearfix">
         <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo fl">
+        <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black fl">
         <ul class="main-nav fr">
-          <li><a href="#">Food delivery</a></li>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">Our cities</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a href="#delivery">Food delivery</a></li>
+          <li><a href="#howItWorks">How it works</a></li>
+          <li><a href="#cities">Our cities</a></li>
+          <li><a href="#signup">Sign up</a></li>
         </ul>
+        <a class="mobile-icon fr"><i class="ion-navicon-round"></i></a>
       </div>
     </nav>
     <div class="hero-text-box">
@@ -31,7 +41,7 @@
       <a class="btn btn-ghost" href="#">Show me more</a>
     </div>
   </header>
-  <section class="section-features">
+  <section class="section-features" id="delivery">
     <div class="row">
       <h2>Get food fast &mdash; not fast food</h2>
       <p class="long-copy">
@@ -115,7 +125,7 @@
       </li>
     </ul>
   </section>
-  <section class="section-steps">
+  <section class="section-steps" id="howItWorks">
     <div class="row">
       <h2>How it works &mdash; Simple as 1, 2, 3</h2>
     </div>
@@ -141,7 +151,7 @@
       </div>
     </div>
   </section>
-  <section class="section-cities">
+  <section class="section-cities" id="cities">
     <div class="row">
       <h2>We're currently in these cities</h2>
     </div>
@@ -304,7 +314,7 @@
       </div>
     </div>
   </section>
-  <section class="section-form">
+  <section class="section-form" id="signup">
     <div class="row">
       <h2>We're happy to hear from you</h2>
     </div>
@@ -392,5 +402,14 @@
       </p>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="vendors/js/SmoothScroll.js"></script>
+  <script src="resources/js/StickyHeader.js"></script>
+  <script src="resources/js/RevealOnScroll.js"></script>
+  <script src="resources/js/main.js"></script>
 </body>
 </html>
